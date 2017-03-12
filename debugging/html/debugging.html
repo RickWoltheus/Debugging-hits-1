@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debugging 1</title>
+    <link rel="stylesheet" href="../css/debugging.css">
+    <link rel="stylesheet" href="../css/flexboxmain.css">
+
+    <link rel="stylesheet" href="../css/flexboxsmall.css" media="screen">
+    <!--<link rel="stylesheet" href="../css/flexboxmedium.css" media="screen and (min-width: 600px)">-->
+    <link rel="stylesheet" href="../css/flexboxbetween.css" media="screen and (min-width: 800px) and (max-width: 1000px)">
+    <link rel="stylesheet" href="../css/flexboxbig.css" media="screen and (min-width: 1000px)">
+</head>
+<body>
+
+<div class="container smallfont">
+    <div class="box side">
+        <p>Opdrachten</p>
+        <ol>
+            <li>Maak het programma werkend.</li>
+            <li>Los alle fouten en waarschuwingen op.</li>
+            <li>Wat is de 304 error en wanneer krijg je die.</li>
+            <li>Verwijder niet gebruikte JavaScript code, CSS code en afbeeldingen.</li>
+            <li>Toon de melding van het bestand greeting.js.</li>
+            <li>Herschrijf het stuk met de if statements, zonder elseif te gebruiken.</li>
+            <li>Test de uitkomst, in welke gevallen is er een betere oplossing mogelijk?</li>
+            <li>Pas de huidige oplossing aan.</li>
+        </ol>
+
+        <p>Nuttig om te weten</p>
+        <ol>
+            <li>Document.getElementById()</li>
+            <li>Document.getElementsByClassName()</li>
+            <li>Document.querySelector()</li>
+            <li>Document.createElement()</li>
+            <li>Document.createTextNode()</li>
+            <li>ParentNode.append() (experimenteel)</li>
+        </ol>
+
+    </div>
+
+    <div class="box main">
+        <h1></h1>
+        <p>De debugger is in zowel in Safari, Chrome en FireFox aanwezig.</p>
+        <p>Met debuggen worden fouten uit de code gehaald, kunnen variabelen een andere inhoud krijgen om te testen en kan de flow van het programma bekeken worden.</p>
+        <p>Elke debugger werkt in principe hetzelfde, de foutmeldingen die getoond worden kunnen wel verschillen. Bekijk alle browsers en test de functies hiervan.</p>
+        <ul>Belangrijke functies van de debugger
+            <li>Continue - ga verder tot het volgende breakpoint</li>
+            <li>Step over - ga naar de volgende regel, gaat niet dieper in de functies van huidige regel</li>
+            <li>Step into - ga naar de volgende regel, gaat dieper in elke aangeroepen functie op de huidige regel</li>
+            <li>Step out - ga naar het volgende frame in de call stack</li>
+        </ul>
+        <ul>Call Stack
+            <li>Breakpoint - markering in de code waar het script gepauzeerd kan worden.</li>
+            <li>Conditional Breakpoints - Deze breakpoints treden alleen op wanneer de contitie waar is.</li>
+            <li>Call Stack - lijst van aangeroepen functies die nog niet gereed zijn.</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="../js/greeting.js"></script>
+
+</body>
+</html>
